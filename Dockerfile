@@ -1,4 +1,4 @@
-FROM bitwalker/alpine-erlang:latest
+FROM nebo15/alpine-erlang:latest
 MAINTAINER Nebo#15 <support@nebo15.com>
 
 # Install various tools
