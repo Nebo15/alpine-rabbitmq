@@ -6,7 +6,7 @@ RUN apk --no-cache add xz curl jq su-exec bash && \
     rm -rf /var/cache/apk/*
 
 # Install GOSU
-ENV GOSU_VERSION 1.9
+ENV GOSU_VERSION 1.10
 RUN set -x \
     && apk add --no-cache --virtual .gosu-deps \
         dpkg \
