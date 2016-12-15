@@ -27,7 +27,7 @@ RUN set -x \
 RUN apk --no-cache add erlang-hipe erlang-os-mon erlang-xmerl erlang-eldap
 
 # Configure RabbitMQ
-ENV RABBITMQ_VERSION=3.6.5 \
+ENV RABBITMQ_VERSION=3.6.6 \
     RABBITMQ_USER=rabbitmq \
     RABBITMQ_HOME=/var/lib/rabbitmq \
     RABBITMQ_CONFIG_BASE=/etc/rabbitmq \
@@ -83,9 +83,9 @@ RUN rabbitmq-plugins enable --offline \
         rabbitmq_management_agent \
         rabbitmq_consistent_hash_exchange \
         rabbitmq_shovel && \
+        autocluster \
   rabbitmq-plugins list
 
-        # autocluster \
         # rabbitmq_sharding \
         # rabbitmq_federation \
 
