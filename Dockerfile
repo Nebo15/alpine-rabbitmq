@@ -80,10 +80,10 @@ WORKDIR ${RABBITMQ_HOME}
 
 # Enable sentitel plugins
 RUN rabbitmq-plugins enable --offline \
+        autocluster \
         rabbitmq_management_agent \
         rabbitmq_consistent_hash_exchange \
         rabbitmq_shovel && \
-        autocluster \
   rabbitmq-plugins list
 
         # rabbitmq_sharding \
