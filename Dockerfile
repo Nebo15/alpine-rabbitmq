@@ -27,7 +27,7 @@ RUN set -x \
 RUN apk --no-cache add erlang-hipe erlang-os-mon erlang-xmerl erlang-eldap
 
 # Configure RabbitMQ
-ENV RABBITMQ_VERSION=3.6.6 \
+ENV RABBITMQ_VERSION=3.6.9 \
     RABBITMQ_USER=rabbitmq \
     RABBITMQ_HOME=/var/lib/rabbitmq \
     RABBITMQ_CONFIG_BASE=/etc/rabbitmq \
